@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom Valley Nursery | Beautiful Plants for Your Garden</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header id="navbar">
+        <div class="container">
+            <a href="#" class="logo">Bloom Valley<span>Nursery</span></a>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#care-guide">Care Guide</a></li>
+                </ul>
+            </nav>
+            <div class="nav-right">
+                <button id="cart-btn" class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </button>
+                <button id="menu-btn" class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <!-- 移动端导航菜单 -->
+        <div id="mobile-menu" class="mobile-menu">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#care-guide">Care Guide</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- 首页轮播图 -->
+    <section class="hero">
+        <div class="slideshow">
+            <div class="slide active">
+                <img src="https://picsum.photos/id/145/1920/800" alt="Beautiful garden with various plants">
+                <div class="slide-content">
+                    <h1>Grow Your Dream Garden</h1>
+                    <p>Premium plants and expert advice for every gardener</p>
+                    <a href="#gallery" class="btn primary">Explore Plants</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://picsum.photos/id/152/1920/800" alt="Colorful flowers in a nursery">
+                <div class="slide-content">
+                    <h1>Quality Plants for Every Season</h1>
+                    <p>Discover our wide selection of seasonal flowers and shrubs</p>
+                    <a href="#gallery" class="btn primary">Shop Now</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://picsum.photos/id/160/1920/800" alt="Green nursery with healthy plants">
+                <div class="slide-content">
+                    <h1>Expert Gardening Tips</h1>
+                    <p>Get advice from our experienced horticulturists</p>
+                    <a href="#care-guide" class="btn primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="slide-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+        </div>
+    </section>
+
+    <!-- 关于苗圃简介 -->
+    <section class="about-nursery">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Welcome to Bloom Valley Nursery</h2>
+                    <p>For over 20 years, Bloom Valley Nursery has been providing high-quality plants and gardening solutions to gardening enthusiasts and professionals alike. Our commitment to excellence and sustainability has made us a trusted name in the industry.</p>
+                    <p>We take pride in growing healthy, vibrant plants in our nursery, using eco-friendly practices that protect the environment while ensuring the best possible quality for our customers.</p>
+                    <a href="#about" class="btn secondary">Learn More About Us</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://picsum.photos/id/146/600/400" alt="Bloom Valley Nursery landscape">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 精选产品 -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Our Plants</h2>
+            <p>Explore our wide range of beautiful plants, from colorful flowers to lush shrubs and trees.</p>
+            
+            <!-- 筛选按钮 -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Plants</button>
+                <button class="filter-btn" data-filter="flowers">Flowers</button>
+                <button class="filter-btn" data-filter="shrubs">Shrubs</button>
+                <button class="filter-btn" data-filter="trees">Trees</button>
+            </div>
+            
+            <!-- 产品网格 -->
+            <div class="products-grid">
+                <!-- 产品1 -->
+                <div class="product-item" data-category="flowers">
+                    <div class="product-image">
+                        <img src="https://picsum.photos/id/152/400/300" alt="Rose Bush">
+                        <div class="product-overlay">
+                            <button class="add-to-cart" data-id="1" data-name="Rose Bush" data-price="29.99" data-image="https://picsum.photos/id/152/400/300">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Rose Bush</h3>
+                        <p class="product-price">$29.99</p>
+                    </div>
+                </div>
+                
+                <!-- 产品2 -->
+                <div class="product-item" data-category="shrubs">
+                    <div class="product-image">
+                        <img src="https://picsum.photos/id/160/400/300" alt="Lavender Shrub">
+                        <div class="product-overlay">
+                            <button class="add-to-cart" data-id="2" data-name="Lavender Shrub" data-price="34.99" data-image="https://picsum.photos/id/160/400/300">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Lavender Shrub</h3>
+                        <p class="product-price">$34.99</p>
+                    </div>
+                </div>
+                
+                <!-- 产品3 -->
+                <div class="product-item" data-category="trees">
+                    <div class="product-image">
+                        <img src="https://picsum.photos/id/145/400/300" alt="Maple Tree">
+                        <div class="product-overlay">
+                            <button class="add-to-cart" data-id="3" data-name="Maple Tree" data-price="99.99" data-image="https://picsum.photos/id/145/400/300">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Maple Tree</h3>
+                        <p class="product-price">$99.99</p>
+                    </div>
+                </div>
+                
+                <!-- 产品4 -->
+                <div class="product-item" data-category="flowers">
+                    <div class="product-image">
+                        <img src="https://picsum.photos/id/153/400/300" alt="Sunflower Plant">
+                        <div class="product-overlay">
+                            <button class="add-to-cart" data-id="4" data-name="Sunflower Plant" data-price="19.99" data-image="https://picsum.photos/id/153/400/300">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Sunflower Plant</h3>
+                        <p class="product-price">$19.99</p>
+                    </div>
+                </div>
+                
+                <!-- 产品5 -->
+                <div class="product-item" data-category="shrubs">
+                    <div class="product-image">
+                        <img src="https://picsum.photos/id/161/400/300" alt="Hydrangea Shrub">
+                        <div class="product-overlay">
+                            <button class="add-to-cart" data-id="5" data-name="Hydrangea Shrub" data-price="39.99" data-image="https://picsum.photos/id/161/400/300">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Hydrangea Shrub</h3>
+                        <p class="product-price">$39.99</p>
+                    </div>
+                </div>
+                
+                <!-- 产品6 -->
+                <div class="product-item" data-category="trees">
+                    <div class="product-image">
+                        <img src="https://picsum.photos/id/148/400/300" alt="Oak Tree">
+                        <div class="product-overlay">
+                            <button class="add-to-cart" data-id="6" data-name="Oak Tree" data-price="149.99" data-image="https://picsum.photos/id/148/400/300">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Oak Tree</h3>
+                        <p class="product-price">$149.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 订阅区域 -->
+    <section class="subscribe">
+        <div class="container">
+            <h2>Stay Updated with Our Latest Offers</h2>
+            <p>Subscribe to our newsletter for gardening tips, seasonal offers, and exclusive discounts.</p>
+            <form id="subscribe-form" class="subscribe-form">
+                <input type="email" id="email-subscribe" placeholder="Your email address" required>
+                <button type="submit" class="btn primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 关于我们页面 (通过ID引用实现，实际项目中应为独立页面) -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Bloom Valley Nursery</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Our Story</h3>
+                    <p>Founded in 2003, Bloom Valley Nursery started as a small family-owned business with a passion for growing beautiful plants. Over the years, we have expanded our nursery to become a leading provider of high-quality plants in the region.</p>
+                    <p>Our team of experienced horticulturists is dedicated to ensuring that every plant we grow meets our strict standards for health and vitality. We believe in sustainable gardening practices and strive to minimize our environmental impact.</p>
+                    
+                    <h3>Our Team</h3>
+                    <p>Meet our expert team who are passionate about helping you create the garden of your dreams:</p>
+                    <ul class="team-list">
+                        <li><strong>Emma Johnson</strong> - Head Horticulturist</li>
+                        <li><strong>Michael Rodriguez</strong> - Plant Specialist</li>
+                        <li><strong>Sarah Williams</strong> - Garden Designer</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://picsum.photos/id/147/600/400" alt="Bloom Valley Nursery team">
+                    
+                    <!-- 联系表单 -->
+                    <div class="contact-form">
+                        <h3>Contact Us</h3>
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 植物养护指南页面 (通过ID引用实现，实际项目中应为独立页面) -->
+    <section id="care-guide" class="care-guide">
+        <div class="container">
+            <h2 class="section-title">Plant Care Guide</h2>
+            <p>Learn how to care for your plants and keep them healthy and vibrant all year round.</p>
+            
+            <!-- 养护指南分类 -->
+            <div class="care-categories">
+                <button class="care-category active" data-category="watering">Watering Tips</button>
+                <button class="care-category" data-category="fertilizing">Fertilizing</button>
+                <button class="care-category" data-category="pruning">Pruning</button>
+                <button class="care-category" data-category="pests">Pest Control</button>
+            </div>
+            
+            <!-- 养护指南内容 -->
+            <div class="care-content" id="watering-content">
+                <h3>Watering Tips for Healthy Plants</h3>
+                <p>Proper watering is essential for the health of your plants. Here are some tips to help you water your plants correctly:</p>
+                <ul>
+                    <li>Water deeply but infrequently to encourage deep root growth</li>
+                    <li>Water in the morning or evening to reduce evaporation</li>
+                    <li>Avoid wetting the leaves, as this can lead to fungal diseases</li>
+                    <li>Check the soil moisture before watering - stick your finger 1-2 inches into the soil; if it's dry, it's time to water</li>
+                    <li>Different plants have different water needs - research the specific needs of your plants</li>
+                </ul>
+                <img src="https://picsum.photos/id/156/600/300" alt="Watering plants">
+            </div>
+            
+            <div class="care-content hidden" id="fertilizing-content">
+                <h3>Fertilizing Your Plants</h3>
+                <p>Fertilizing provides essential nutrients to your plants, helping them grow strong and healthy. Here's what you need to know:</p>
+                <ul>
+                    <li>Use a balanced fertilizer for most plants, or a specialized fertilizer for specific needs</li>
+                    <li>Fertilize during the growing season (spring and summer) and reduce or stop in fall and winter</li>
+                    <li>Follow the instructions on the fertilizer package to avoid over-fertilizing, which can damage roots</li>
+                    <li>Organic fertilizers are a great option for sustainable gardening</li>
+                </ul>
+                <img src="https://picsum.photos/id/157/600/300" alt="Fertilizing plants">
+            </div>
+            
+            <div class="care-content hidden" id="pruning-content">
+                <h3>Pruning Techniques</h3>
+                <p>Pruning helps maintain the shape of your plants and promotes healthy growth
